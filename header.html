@@ -1,0 +1,18 @@
+<a href="#" class="close-menu" ng-click="menuClick()">&#9776;</a>
+<div class="header-brand">
+	<div class="header-logo">
+		<img src="/angular/images/dancingeverywhere2_logo50x50.png" title="Dancing Everywhere Logo">
+	</div>
+	<div class="header-title">
+		<a href="#dances">Dancing Everywhere</a>
+	</div>
+</div>
+<nav class="header-nav">
+	<ul>
+		<li><a href="#dances" ng-click="pageChange('dances')">Dances</a></li>
+		<li><a href="#submit" ng-click="pageChange('submit')">Submit</a></li>
+		<li><a href="#vision" ng-click="pageChange('vision')">Vision</a></li>
+		<li><a href="#contact" ng-click="pageChange('contact')">Contact</a></li>
+	</ul>
+</nav>
+<footer ng-include="'footer.html'"></footer>
