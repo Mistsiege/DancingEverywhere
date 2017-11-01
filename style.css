@@ -1,4 +1,6 @@
-// General  ----------------------------------------------------------------------------------------------------------------
+/* Styles go here */
+
+/*****----------     -General-     ----------*****/
 body {
 	margin: 0;
 	width: 100%;
@@ -26,65 +28,65 @@ h2 { font-size: 1.5rem; }
 h3 { font-size: 1.1rem; }
 .center { text-align: center; }
 
-// Header  -----------------------------------------------------------------------------------------------------------------
-header {
-	&.menu-base {
-		width: 12rem;
-		height: 100%;
-		position: fixed;
-		background: #FFF;
-		border-bottom: 2rem solid #1abb9c;
-		border-right: 1px solid lightgray;
-		-webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.07);
-		-moz-box-shadow: 0 3px 0 rgba(0,0,0,0.07);
-		box-shadow: 0 3px 0 rgba(0,0,0,0.07);
-		z-index: 1001;
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-around;
-		align-items: center;
-		align-content: center;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition-property: left; /* Safari */
-		-webkit-transition-duration: 1s; /* Safari */
-		transition-property: left;
-		transition-duration: 1s;
-	}
-	&.menuOpen {
-		left: 0;
-	}
-	&.menuClosed {
-		left: -12rem;
-	}
+
+
+
+/*****----------     -Header-     ----------*****/
+header.menu-base {
+	width: 12rem;
+	height: 100%;
+	position: fixed;
+	background: #FFF;
+	border-bottom: 2rem solid #1abb9c;
+	border-right: 1px solid lightgray;
+	-webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.07);
+	-moz-box-shadow: 0 3px 0 rgba(0,0,0,0.07);
+	box-shadow: 0 3px 0 rgba(0,0,0,0.07);
+	z-index: 1001;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition-property: left; /* Safari */
+	-webkit-transition-duration: 1s; /* Safari */
+	transition-property: left;
+	transition-duration: 1s;
+}
+header.menuOpen {
+	left: 0;
+}
+header.menuClosed {
+	left: -12rem;
 }
 .header-nav {
 	width: inherit;
 	height: 55%;
 	min-height: 11rem;
-	ul {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-around;
-		align-items: center;
-		align-content: center;
-		list-style-type: disc;
-		-webkit-margin-before: 1em;
-		-webkit-margin-after: 1em;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
-		-webkit-padding-start: 0px;
-		li {
-			list-style-type: none;
-			width: 80%;
-			text-align: center;
-			margin-bottom: 1rem;
-			font-size: 1rem;
-		}
-	}
 }
-.header-nav ul 
+.header-nav ul {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+.header-nav ul li {
+  list-style-type: none;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
 .header-nav ul li a,
 .header-title a {
 	font-family: 'Open Sans', sans-serif;
@@ -126,18 +128,17 @@ header {
 	align-items: center;
 	align-content: center;
 }
-.header-logo {
-	img {
-		padding: 1rem;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
+.header-logo img {
+	padding: 1rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .header-title {
 	font-size: 1.6rem;
 	text-align: center;
 }
+
 .close-menu {
 	background: white;
 	width: 3rem;
@@ -152,12 +153,12 @@ header {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 2rem;
-	text-align: center;
-	text-decoration: none;
+  text-align: center;
+  text-decoration: none;
 	text-rendering: geometricPrecision;
 }
 
-// Search  -----------------------------------------------------------------------------------------------------------------
+/*****----------     -Search-     ----------*****/
 .close-search {
 	background: gray;
 	width: 3rem;
@@ -203,7 +204,7 @@ header {
 .searchNear { left: 0; }
 .searchWide { left: 12rem; }
 
-// Main  -------------------------------------------------------------------------------------------------------------------
+/*****----------     -Main-     ----------*****/
 .main {
 	height: 100%;
 	width: 100%;
@@ -237,7 +238,8 @@ header {
 	z-index: 0;
 }
 
-// Vision  -----------------------------------------------------------------------------------------------------------------
+
+/*****----------     -Vision-     ----------*****/
 .vision {
 	width: 60%;
 	margin: auto;
@@ -252,7 +254,8 @@ header {
 	float: right;
 }
 
-// Submit  -----------------------------------------------------------------------------------------------------------------
+
+/*****----------     -Submit-     ----------*****/
 .submit {
 	width: 60%;
 	height: 75%;
@@ -335,7 +338,9 @@ header {
 }
 #secondary-styles { width: 49.8rem; }
 
-// Contact  ----------------------------------------------------------------------------------------------------------------
+
+
+/*****----------     -Contact-     ----------*****/
 .contact {
 	width: 60%;
 	margin: auto;
@@ -350,7 +355,8 @@ header {
 	float: right;
 }
 
-// Footer  -----------------------------------------------------------------------------------------------------------------
+
+/*****----------     -Footer-     ----------*****/
 .footer,
 footer {
 	width: inherit;
